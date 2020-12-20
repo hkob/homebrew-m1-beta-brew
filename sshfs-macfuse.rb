@@ -1,4 +1,4 @@
-class M1BetaSshfs < Formula
+class SshfsMacfuse < Formula
   desc "File system client based on SSH File Transfer Protocol"
   homepage "https://osxfuse.github.io/"
   url "https://github.com/libfuse/sshfs/releases/download/sshfs-2.10/sshfs-2.10.tar.gz"
@@ -10,7 +10,7 @@ class M1BetaSshfs < Formula
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
   depends_on "glib"
-  depends_on :osxfuse
+  depends_on "cask" => "macfuse-arm64"
 
   patch do
     url "https://github.com/libfuse/sshfs/commit/667cf34622e2e873db776791df275c7a582d6295.patch?full_index=1"
