@@ -13,7 +13,7 @@ class PlantumlZulu11 < Formula
 
   bottle :unneeded
 
-  depends_on "graphviz"
+  depends_on "graphviz-arm64"
   depends_on "cask" => "zulu11-arm64"
 
   def install
