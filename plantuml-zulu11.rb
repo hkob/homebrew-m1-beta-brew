@@ -24,7 +24,7 @@ class PlantumlZulu11 < Formula
       if [[ "$*" != *"-gui"* ]]; then
         VMARGS="-Djava.awt.headless=true"
       fi
-      GRAPHVIZ_DOT="#{Formula["graphviz"].opt_bin}/dot" exec "#{Formula["openjdk"].opt_bin}/java" $VMARGS -jar #{libexec}/#{jar} "$@"
+      GRAPHVIZ_DOT="#{Formula["graphviz"].opt_bin}/dot" exec "/usr/bin/java" $VMARGS -jar #{libexec}/#{jar} "$@"
     EOS
     chmod 0755, bin/"plantuml"
   end
