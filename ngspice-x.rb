@@ -1,8 +1,8 @@
 class NgspiceX < Formula
   desc "Spice circuit simulator"
   homepage "https://ngspice.sourceforge.io/"
-  url "https://downloads.sourceforge.net/project/ngspice/ng-spice-rework/36/ngspice-36.tar.gz"
-  sha256 "4f818287efba245341046635b757ae81f879549b326a4316b5f6e697aa517f8c"
+  url "https://downloads.sourceforge.net/project/ngspice/ng-spice-rework/40/ngspice-40.tar.gz"
+  sha256 "e303ca7bc0f594e2d6aa84f68785423e6bf0c8dad009bb20be4d5742588e890d"
 
   livecheck do
     url :stable
